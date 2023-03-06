@@ -1,0 +1,56 @@
+@media only screen and (max-width: 500px) {
+
+    .cardstyle {
+        width: 80%;
+        padding: 1rem;
+        border-radius: 3%;
+        background-size: cover;
+    }
+    body {
+        background-size: 100% 35%;
+        font-size: 14px;
+        .container {
+            flex-direction: column;
+            padding: 3rem 2rem;
+            .right {
+                height: 40%;
+                width: 100%;
+                align-items: flex-start;
+                .cardfront {
+                    @extend .cardstyle;
+                    margin-top: -20%;
+                    margin-left: 0%;
+                    order: 2;
+                    .name {
+                        padding: 0;
+                    }
+                    h1 {
+                        font-size: 16px;
+                    }
+                    h2 {
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                }
+                .cardback {
+                    @extend .cardstyle;
+                    align-self: flex-end;
+                    order: 1;
+                    height: 12rem;
+                    padding-right: 3rem;
+                }
+            }
+            .left {
+                width: 100%;
+                padding: 1rem;
+                .cardinfo, #page2 {
+                    width: 100%;
+                }
+                #page2 {
+                    margin-top: -80%;
+                }
+            }
+        }
+
+    }
+}

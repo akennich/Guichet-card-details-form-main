@@ -1,0 +1,16 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: 100% 30%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .right {
+    width: 100%;
+  }
+  .container .left {
+    width: 100%;
+  }
+}

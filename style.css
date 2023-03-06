@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+@media only screen and (max-width: 500px) {
+  .cardstyle, body .container .right .cardback, body .container .right .cardfront {
+    width: 80%;
+    padding: 1rem;
+    border-radius: 3%;
+    background-size: cover;
+  }
+  body {
+    background-size: 100% 35%;
+    font-size: 14px;
+  }
+  body .container {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+  body .container .right {
+    height: 40%;
+    width: 100%;
+    align-items: flex-start;
+  }
+  body .container .right .cardfront {
+    margin-top: -20%;
+    margin-left: 0%;
+    order: 2;
+  }
+  body .container .right .cardfront .name {
+    padding: 0;
+  }
+  body .container .right .cardfront h1 {
+    font-size: 16px;
+  }
+  body .container .right .cardfront h2 {
+    font-size: 14px;
+    margin: 0;
+  }
+  body .container .right .cardback {
+    align-self: flex-end;
+    order: 1;
+    height: 12rem;
+    padding-right: 3rem;
+  }
+  body .container .left {
+    width: 100%;
+    padding: 1rem;
+  }
+  body .container .left .cardinfo, body .container .left #page2 {
+    width: 100%;
+  }
+  body .container .left #page2 {
+    margin-top: -80%;
+  }
+}
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cardformat, .container .right .cardback, .container .right .cardfront {
+  width: 60%;
+  padding: 1rem;
+  border-radius: 3%;
+  background-size: cover;
+}
+
+.displayflex, .container .left, .container .right, .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comstyle {
+  height: 2.5rem;
+  margin-top: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  padding-left: 10px;
+}
+
+.btn {
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  font-size: 1.2rem;
+}
+
+body {
+  background-image: url(./images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+}
+
+.container {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  width: 100%;
+}
+.container .right {
+  width: 50%;
+  flex-direction: column;
+}
+.container .right .cardfront {
+  background-image: url(./images/bg-card-front.png);
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-bottom: 2rem;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.2rem;
+}
+.container .right .cardfront .name {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+}
+.container .right .cardfront h1 {
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+}
+.container .right .cardfront h2 {
+  font-size: 15px;
+  font-weight: 100;
+  margin-left: 2.5rem;
+}
+.container .right .cardfront img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 4rem;
+  width: 4rem;
+  height: auto;
+}
+.container .right .cardback {
+  background-image: url(./images/bg-card-back.png);
+  height: 15rem;
+  margin-left: 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+}
+.container .left {
+  width: 50%;
+  flex-direction: column;
+}
+.container .left .cardinfo {
+  width: 60%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.container .left .cardinfo .errormsg {
+  margin-top: 0px;
+  color: hsl(0, 100%, 66%);
+}
+.container .left .cardinfo .divmsg {
+  margin-top: 0px;
+  height: 1.5rem;
+}
+.container .left .cardinfo .expdatecvc {
+  display: flex;
+}
+.container .left .cardinfo .expdatecvc .expdate {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.container .left .cardinfo .expdatecvc .expdate .yymm #yy,
+.container .left .cardinfo .expdatecvc .expdate .yymm #mm {
+  width: 4em;
+  margin-right: 1rem;
+}
+.container .left .cardinfo .expdatecvc .cvc {
+  width: 50%;
+}
+.container .left .cardinfo .expdatecvc .cvc #cvc {
+  width: 100%;
+}
+.container .left #page2 {
+  margin-top: -50%;
+  width: 60%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.container .left #page2 p {
+  color: hsl(279, 6%, 55%);
+}
+.container .left #page2 .thanks {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.container .left #page2 img {
+  width: 4rem;
+  height: auto;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */

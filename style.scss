@@ -1,0 +1,157 @@
+@import "vars";
+@import "mobile";
+@import "utils";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cardformat {
+    width: 60%;
+    padding: 1rem;
+    border-radius: 3%;
+    background-size: cover;
+}
+.displayflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comstyle {
+    height: 2.5rem;
+    // border-radius: 10px;
+    // margin-bottom: 1em;
+    margin-top: 0px;
+    font-family: 'Space Grotesk', sans-serif;
+    padding-left: 10px;
+}
+
+.btn {
+    background-color: $Verydarkviolet;
+    color: $White;
+    border: none;
+    font-size: 1.2rem;
+}
+
+body {
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    // height: 100vh;
+}
+
+.container {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    @extend .displayflex;
+    .right {
+        width: 50%;
+        @extend .displayflex;
+        flex-direction: column; 
+        .cardfront {
+            @extend .cardformat;
+            background-image: url(./images/bg-card-front.png);
+            margin-top: 10%;
+            margin-left: 20%;
+            margin-bottom: 2rem;
+            color: $White;
+            letter-spacing: .2rem;
+            .name {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 3rem;
+            }
+            h1 {
+                font-size: 24px;
+                font-weight: 100;
+                text-align: center;
+            }
+            h2 {
+                font-size: 15px;
+                font-weight: 100;
+                margin-left: 2.5rem;
+            }
+            img {
+                margin-top: 1rem;
+                margin-left: 1rem;
+                margin-bottom: 4rem;
+                width: 4rem;
+                height: auto;
+            }
+        }
+        .cardback {
+            @extend .cardformat;
+            background-image: url(./images/bg-card-back.png);
+            height: 15rem;
+            margin-left: 35%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: $White;
+        }
+    }
+    .left {
+        width: 50%;
+        @extend .displayflex;
+        flex-direction: column;
+        .cardinfo {
+            width: 60%;
+            // margin-top: 5%;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            .errormsg {
+                margin-top: 0px;
+                color: $Red;
+            }
+            .divmsg {
+                margin-top: 0px;
+                height: 1.5rem;
+            }
+            .expdatecvc {
+                display: flex;
+                .expdate {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 50%;
+                    .yymm {
+                        #yy,
+                        #mm {
+                            width: 4em;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+                .cvc {
+                    width: 50%;
+                    #cvc {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #page2 {
+            margin-top: -50%;
+            width: 60%;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            p {
+                color: $Darkgrayishviolet;
+            }
+            .thanks {
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            img {
+                width: 4rem;
+                height: auto;
+                margin: auto;
+            }
+            
+        }
+    }
+}
