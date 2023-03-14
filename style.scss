@@ -15,14 +15,19 @@
     border-radius: 3%;
     background-size: cover;
 }
+
 .displayflex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.comstyle {
-    height: 2.5rem;
-    // border-radius: 10px;
+
+input {
+    height: 2.7rem;
+    background: linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(45deg, slateblue, coral) border-box;
+                border: 1px solid transparent;
+                border-radius: 10px;
     // margin-bottom: 1em;
     margin-top: 0px;
     font-family: 'Space Grotesk', sans-serif;
@@ -30,6 +35,8 @@
 }
 
 .btn {
+    border-radius: 10px;
+    height: 2.7rem;
     background-color: $Verydarkviolet;
     color: $White;
     border: none;
@@ -47,10 +54,12 @@ body {
     font-weight: 500;
     width: 100%;
     @extend .displayflex;
+
     .right {
         width: 50%;
         @extend .displayflex;
-        flex-direction: column; 
+        flex-direction: column;
+
         .cardfront {
             @extend .cardformat;
             background-image: url(./images/bg-card-front.png);
@@ -59,21 +68,25 @@ body {
             margin-bottom: 2rem;
             color: $White;
             letter-spacing: .2rem;
+
             .name {
                 display: flex;
                 justify-content: space-between;
                 padding-right: 3rem;
             }
+
             h1 {
                 font-size: 24px;
                 font-weight: 100;
                 text-align: center;
             }
+
             h2 {
                 font-size: 15px;
                 font-weight: 100;
                 margin-left: 2.5rem;
             }
+
             img {
                 margin-top: 1rem;
                 margin-left: 1rem;
@@ -82,6 +95,7 @@ body {
                 height: auto;
             }
         }
+
         .cardback {
             @extend .cardformat;
             background-image: url(./images/bg-card-back.png);
@@ -93,31 +107,39 @@ body {
             color: $White;
         }
     }
+
     .left {
         width: 50%;
         @extend .displayflex;
         flex-direction: column;
+
         .cardinfo {
             width: 60%;
             // margin-top: 5%;
             align-self: center;
             display: flex;
             flex-direction: column;
+
             .errormsg {
                 margin-top: 0px;
                 color: $Red;
             }
+
             .divmsg {
                 margin-top: 0px;
                 height: 1.5rem;
             }
+
             .expdatecvc {
                 display: flex;
+
                 .expdate {
                     display: flex;
                     flex-wrap: wrap;
                     width: 50%;
+
                     .yymm {
+
                         #yy,
                         #mm {
                             width: 4em;
@@ -125,33 +147,39 @@ body {
                         }
                     }
                 }
+
                 .cvc {
                     width: 50%;
+
                     #cvc {
                         width: 100%;
                     }
                 }
             }
         }
+
         #page2 {
             margin-top: -50%;
             width: 60%;
             font-size: 16px;
             display: flex;
             flex-direction: column;
+
             p {
                 color: $Darkgrayishviolet;
             }
+
             .thanks {
                 margin-bottom: 1rem;
                 text-align: center;
             }
+
             img {
                 width: 4rem;
                 height: auto;
                 margin: auto;
             }
-            
+
         }
     }
 }
