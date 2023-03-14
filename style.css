@@ -78,14 +78,19 @@
   align-items: center;
 }
 
-.comstyle {
-  height: 2.5rem;
+input {
+  height: 2.7rem;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, slateblue, coral) border-box;
+  border: 1px solid transparent;
+  border-radius: 10px;
   margin-top: 0px;
   font-family: "Space Grotesk", sans-serif;
   padding-left: 10px;
 }
 
 .btn {
+  border-radius: 10px;
+  height: 2.7rem;
   background-color: hsl(278, 68%, 11%);
   color: hsl(0, 0%, 100%);
   border: none;
